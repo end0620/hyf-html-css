@@ -1,0 +1,33 @@
+body{
+	font-family: 'PT Serif', serif;		
+	color: #333;
+	line-height: 90%;
+}
+li{padding: 10px;}
+p{text-align: justify;}
+.main-header{text-align: center;}
+.main-header h1{font-size: 35px;}
+.main-content{
+	width: 80%;
+	margin: 50px auto;
+	background: #eee;
+}
+.intro{padding: 30px;}
+.center{margin: 0 auto;}
+.main-img{
+	display: block;
+	filter: grayscale(100%);
+	border: 8px solid white;
+}
+.content{width: 800px;}
+
+.content h2, h3{
+	border-bottom: 2px solid;
+	padding-bottom: 6px;
+	margin-bottom: 0px;
+}
+.content h4{
+	margin-top: 1px;
+	font-size: 15px;
+}
+.content ul{padding-left: 20px;}
