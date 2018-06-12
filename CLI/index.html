@@ -4,6 +4,34 @@
 	<title></title>
 </head>
 <body>
-	<p>hello</p>
+	<p>1)
+To create a hidden directory or a hidden file you just have to put the "." at the begin.
+example:
+mkdir .test -> will create a hidden directory 
+touch .file -> will create a hidden file
+
+To show the hidden file with the ls command in the terminal we only have to use the "-a" extension for the ls command. Example:
+ls -a -> this will show all the files and directory in the current path, included the hidden files.
+
+
+2)How to create multiple nested directories in one command
+We just need to use de "-p" extension for the mkdir command. Example:
+
+mkdir unmesh/these/folders/are/just/for/fun
+
+3)echo "test" > fun
+echo "another test" >> fun
+wc -c fun
+
+number of character: 18
+
+4)to append something to a fila using echo without putting a end of line character we can use the "-n" extension of the command echo. Example:
+
+echo -n "test" > fun
+echo "another test" >> fun
+
+cat fun = "testanother test"
+
+</p>
 </body>
 </html>
