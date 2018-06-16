@@ -12,6 +12,7 @@ img{
 	width: 100%;
 	height: auto;
 }
+
 li{list-style-type: none;}
 
 h1{
@@ -22,10 +23,6 @@ h1{
 	margin: 10px auto;
 	padding: 5px;
 	border-radius: .5em;
-}
-
-h3{
-
 }
 
 h2{
@@ -49,6 +46,7 @@ ul{	padding: 0;	display: block;}
 }
 
 #grid-floats{width: 95%; margin: auto;}
+
 #grid-floats:after{
 	content: "";
 	display: block;
@@ -64,15 +62,9 @@ ul{	padding: 0;	display: block;}
 	border-radius: 1rem;
 	
 }
-.grid-item:nth-child(odd)
-{
-	animation: borderanim 4s infinite;
-}
-.grid-item:nth-child(even)
-{
-	animation: borderanim2 4s infinite;
-}
-/*.grid-item img + p {display: none;}*/
+.grid-item:nth-child(odd){animation: borderanim 4s infinite;}
+
+.grid-item:nth-child(even){animation: borderanim2 4s infinite;}
 
 #grid-floats .grid-item{float: left;}
 
@@ -84,23 +76,22 @@ ul{	padding: 0;	display: block;}
 
 .grid-item img + p{min-height: 300px}
 
-.grid-item img{
-	float: left;
-	/*width: 50%;*/
-}
+.grid-item img{float: left;}
 
 .grid-item h3{min-height: 4em;}
-
 
 @media only screen 	and (max-width: 680px)
 {
 	#grid-floats .grid-item, #grid-flex .grid-item {width: calc(50% - 4.4rem);}
+
 	.grid-item img+p{display: none;}
+
 	#grid-floats .grid-item:nth-child(1), #grid-flex .grid-item:nth-child(1)
 	{
 		width: calc(100% - 4.4rem);
 		clear: both;
 	}
+
 	#grid-floats .grid-item:nth-child(1) p, #grid-flex .grid-item:nth-child(1) p{display: block;}
 
 }
@@ -108,13 +99,15 @@ ul{	padding: 0;	display: block;}
 @media only screen 	and (min-width: 681px) and (max-width: 860px)
 {
 	.grid-item h3{min-height: 3.3em;}
+
 	.grid-item img+p{display: none;}
+
 	#grid-floats .grid-item, #grid-flex .grid-item{width: calc(33.33333% - 4.4rem);}
 
 	#grid-floats .grid-item:nth-child(n+1):nth-child(-n+2), #grid-flex .grid-item:nth-child(n+1):nth-child(-n+2){
 		width: calc(50% - 4.4rem);
-		
 	}
+
 	#grid-floats .grid-item:nth-child(n+1):nth-child(-n+2) p, #grid-flex .grid-item:nth-child(n+1):nth-child(-n+2) p
 	{
 		display: block;
@@ -124,16 +117,10 @@ ul{	padding: 0;	display: block;}
 	html{font-size: 11px;}
 }
 
-
 @media only screen 	and (min-width: 861px) and (max-width: 1350px)
 {
 	#grid-floats .grid-item:nth-child(1) p, #grid-flex .grid-item:nth-child(1) p{display: block;}
 }
-
-/*@keyframes shrink {
-    0%   {width: 90%;}
-    100% {width: 40%; background-color: white;}
-}*/
 
 @keyframes borderanim{
 	0% {border:0.2rem solid white;}
