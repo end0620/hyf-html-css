@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CLI Homework</title>
+	<style>
+		body{
+			font-size: 20px;
+			line-height: 1.6;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	mkdir dir<br>
+	cd dir<br>
+	touch blank<br>
+	for i in {1..5}; do echo "hello" >>greetings.txt; done<br>
+	for i in {1..5}; do cat greetings.txt > $i.txt; done<br>
+	echo "cat" > pets.txt<br>
+	echo "dog" >> pets.txt<br>
+	echo "hamster" >> pets.txt<br>
+	echo "cat" > commands.txt<br>
+	echo "ls" >> commands.txt<br>
+	echo "pwd" >> command.txt<br>
+	sort -u pets.txt commands.txt > lovelyCommands.txt<br>
+</body>
+</html>
