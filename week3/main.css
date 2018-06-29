@@ -14,12 +14,10 @@ ul, h2, h3{
 	padding: 0;
 	margin: 0;
 }
-
 img{
 	display: block;
 	width: 100%;
 }
-
 a:hover, a{
 	color: #01689b;
     text-decoration: underline;
@@ -248,11 +246,8 @@ nav:after{
 
 }
 
-.banner.item{
-	padding: 0px;
-	margin-left: 15px;
-	margin-right: 15px;
-
+.banners{
+	margin: 0 15px 0 15px;
 }
 
 .f1{
@@ -285,7 +280,7 @@ nav:after{
 	background-color: #01689b;
 }
 
-.footer a, h2, span{
+.footer a, .footer h2, .footer span{
 	color: white;
 }
 
@@ -349,5 +344,88 @@ nav:after{
     color: #007bc7;
     text-decoration: none;
     font-size: 1em;
+}
+
+
+@media (max-width: 420px)
+{
+	.taskNavigation{
+		padding: 15px 15px 20px 15px;
+		margin: 10px 15px 15px 15px;
+	}
+	.navright{
+		display: none;
+	}
+	.navleft{
+		margin-left: 15px;
+	}
+
+	.logo .wrapper img{
+		width: 200%;
+	}
+
+	.navigation .wrapper .flex .item{
+		width: calc(100% - 30px);
+	}
+
+	.main .wrapper{
+		padding: 20px 0 15px 0px;
+	}
+	.main .wrapper .flex .item{
+		margin-bottom: 25px;
+	}
+	.item a h2{
+		font-size: 1.55em;
+		line-height: 1.2em;
+	}
+
+	.lastSection .wrapper .flex .item{
+		width: calc(100% - 30px);
+	}
+	.f1{
+		font-size: 40px;
+	}
+	.f2{
+		font-size: 35px;
+	}
+
+	.f3{
+		font-size: 28px;
+	}
+
+	.f4{
+		font-size: 35px;
+	}
+
+	.footer .item{
+		width: calc(50% - 30px);
+	}
+
+	.footer .item:first-child{
+		width: calc(100% - 30px);
+	}
+	.footer .wrapper{
+		padding-bottom: 30px;
+	}
+
+	.footer span{
+		font-size: 1.3em;
+	}
+
+	.footer .languages .wrapper{
+		padding: 30px 15px;
+	}
+
+	.languages li.selected
+	{
+		font-size: 1.0em;
+	}
+
+	.languages .wrapper ul li a{
+    	font-size: .88em;
+	}
+	.languages .wrapper ul li{
+		margin-bottom: 10px;
+	}
 }
 
