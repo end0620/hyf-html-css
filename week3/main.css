@@ -33,6 +33,10 @@ a:hover, a{
 
 }
 
+.logo2{
+	display: none;
+}
+
 .logo .wrapper{
 	margin: 0 0 0 50%;
 }
@@ -59,6 +63,13 @@ a:hover, a{
 	padding: 14px 0px 14px 0px;
 }
 
+.navleft, .navright{
+	box-sizing: border-box;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+
 .navleft a{
 	width: auto;
 	font-size: 1.625rem;
@@ -74,6 +85,11 @@ a:hover, a{
 	color: white;
 }
 
+.navBar .wrapper:after{
+	content: "";
+	display: block;
+	clear: both;
+}
 .main{
 	background-color: transparent;
 	padding-bottom: 40px;
@@ -250,6 +266,11 @@ nav:after{
 	margin: 0 15px 0 15px;
 }
 
+.lastSection .wrapper .banners.flex .item{
+	width: calc(100%/3 - 64px);
+	margin: 0 15px 0 15px;
+}
+
 .f1{
 	font-size: 45px;
 	font-weight: bold;
@@ -347,8 +368,15 @@ nav:after{
 }
 
 
-@media (max-width: 420px)
+@media (max-width: 425px)
 {
+	.logo1{
+		display: none;
+	}
+	.logo2{
+		display:block;
+		width: 100% !important; 
+	}
 	.taskNavigation{
 		padding: 15px 15px 20px 15px;
 		margin: 10px 15px 15px 15px;
@@ -381,6 +409,12 @@ nav:after{
 
 	.lastSection .wrapper .flex .item{
 		width: calc(100% - 30px);
+	}
+
+	.lastSection .wrapper .banners.flex .item{
+		width: calc(100% - 64px);
+		margin-top:25px;
+
 	}
 	.f1{
 		font-size: 40px;
@@ -428,4 +462,70 @@ nav:after{
 		margin-bottom: 10px;
 	}
 }
+
+@media (min-width: 426px) and (max-width: 768px)
+{
+
+	.navigation .wrapper .flex .item{
+		width: calc(50% - 30px);
+	}
+
+	.item a h2{
+		font-size: 1.4em;
+		line-height: 1.2em;
+	}
+
+	.item a p{
+		font-size: 105%;
+	}
+
+	.main .wrapper{
+		padding: 40px 0 15px 0px;
+	}
+
+	.lastSection .wrapper .flex .item{
+		width: calc(50% - 30px);
+	}
+
+	.lastSection .wrapper .banners.flex .item{
+		width: calc(50% - 64px);
+
+	}
+
+	.main .wrapper .flex .item{
+		margin-bottom: 25px;
+	}
+
+	.f1{
+		font-size: 40px;
+	}
+	.f2{
+		font-size: 35px;
+	}
+
+	.f3{
+		font-size: 28px;
+	}
+
+	.f4{
+		font-size: 40px;
+	}
+
+	.footer h2{
+		margin: 0;
+	    font-size: 1.6em;	
+	}
+
+	.footer span{
+		font-size: 1.7em;
+	}
+	.footer .item{	
+		width: calc(25% - 30px);
+	}
+
+	.footer .item:first-child{
+		width: calc(50% - 30px);
+	}
+}
+
 
